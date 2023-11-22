@@ -57,18 +57,6 @@ Route::controller(UserController::class)->group(function() {
     Route::post('/admin/delete-user', 'deleteUser')->name('deleteUser')->middleware('checkLogin');
 });
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
-// Route::get('/oder', function () {
-//     return view('checkout/order');
-// })->name('order');
-
-// Route::get('/recent', function () {
-//     return view('admin/recent');
-// })->name('recent');
-
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
