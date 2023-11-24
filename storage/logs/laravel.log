@@ -3038,3 +3038,7 @@
 #56 D:\\ega\\kuliah\\workshop aplikasi berbasis web\\Proyek_akhir\\zayrats_shop\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php(16): require_once('D:\\\\ega\\\\kuliah\\\\w...')
 #57 {main}
 "} 
+[2023-11-24 11:36:25] local.ERROR: Maximum execution time of 60 seconds exceeded {"userId":3,"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Maximum execution time of 60 seconds exceeded at D:\\ega\\kuliah\\workshop_aplikasi_berbasis_web\\Proyek_akhir\\zayrats_shop\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Relations\\Relation.php:16)
+[stacktrace]
+#0 {main}
+"} 
