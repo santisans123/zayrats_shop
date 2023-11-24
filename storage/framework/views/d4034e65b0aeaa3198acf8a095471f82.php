@@ -1,0 +1,2 @@
+<img src="<?php echo e(url('images/logo.png')); ?>" class="h-10 mr-3" alt="Logo" />
+<?php /**PATH D:\ega\kuliah\workshop aplikasi berbasis web\Proyek_akhir\zayrats_shop\resources\views/components/application-mark.blade.php ENDPATH**/ ?>
