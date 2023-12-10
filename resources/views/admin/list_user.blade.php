@@ -33,7 +33,7 @@
                             <td><center>{{ ++$key }}</center></td>
                             <td>{{ $user->name }}</td>
                             <td>{{ $user->email }}</td>
-                            <td><center>{{ date_format($user->last_transaction->created_at,"d-m-Y H:i") }}</center></td>
+                            <td><center>{{ optional($user->last_transaction)->created_at ? date_format($user->last_transaction->created_at, "d-m-Y H:i") : 'Belum ada transaksi' }}</center></td>
                             <td>
                                 <div>
                                     <a href="#" class="mx-1 p-2 rounded-lg" onclick="openDetailModal('{{ $user->id }}')">
@@ -93,11 +93,11 @@
                                 </tr>
                                 <tr>
                                     <td class="py-2 px-4 border-b">Transaksi Terakhir</td>
-                                    <td class="py-2 px-4 border-b">{{ date_format($user->last_transaction->created_at,"d-m-Y H:i") }}</td>
+                                    <td class="py-2 px-4 border-b">{{ optional($user->last_transaction)->created_at ? date_format($user->last_transaction->created_at, "d-m-Y H:i") : 'Belum ada transaksi' }}</td>
                                 </tr>
                                 <tr>
                                     <td class="py-2 px-4 border-b">Item Terakhir</td>
-                                    <td class="py-2 px-4 border-b">{{ $user->last_transaction->item->name }}</td>
+                                    <td class="py-2 px-4 border-b">{{ optional($user->last_transaction)->item->name ?? 'Belum ada transaksi' }}</td>
                                 </tr>
                                 <tr>
                                     <td class="py-2 px-4 border-b">Banyaknya Transaksi</td>
